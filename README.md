@@ -38,9 +38,9 @@ A comprehensive, enterprise-grade network and infrastructure design project crea
 | 10   | Legal Department   | Access to VLANs 40, 50 |
 | 20   | Non-Legal Dept.    | Access to VLANs 40, 50, limited 60 |
 | 30   | IT Department      | Full access to all VLANs |
-| 40   | Servers & Printer  | Restricted via RBAC |
+| 40   | Servers & Printer  | Accessible by VLAN 10/20/50/60 with RBAC. VLAN 30(IT) = full access |
 | 50   | Wi-Fi Access Points| Managed by VLAN 30 |
-| 60   | Security Cameras   | Read-only access by VLAN 20 receptionist |
+| 60   | Security Cameras   | Read-only access by VLAN 20 receptionist and full access by VLAN 30(IT) |
 
 ---
 
